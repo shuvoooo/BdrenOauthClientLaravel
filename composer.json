@@ -1,0 +1,39 @@
+{
+  "name": "shuvoo/bdren-oauth-client-laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Shuvo\\BdrenOauth\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "shuvoooo",
+      "email": "shuvo.punam@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4",
+    "ext-iconv": "*",
+    "illuminate/support": "^7.30.6",
+    "illuminate/http": "^7.30.6",
+    "illuminate/routing": "7.x-dev"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "BdrenOauthServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  }
+}
