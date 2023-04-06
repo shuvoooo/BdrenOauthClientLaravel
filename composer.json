@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "BdrenOauthServiceProvider"
+        "Shuvo\\BdrenOauth\\BdrenOauthServiceProvider"
       ]
     }
   },
