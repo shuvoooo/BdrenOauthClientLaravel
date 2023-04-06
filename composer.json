@@ -16,7 +16,8 @@
       "email": "shuvo.punam@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
+  "version": "1.0.0",
   "require": {
   },
   "extra": {
