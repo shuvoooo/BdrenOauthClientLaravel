@@ -16,7 +16,7 @@ class BdrenOauthServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/config/bdren_oauth.php' => config_path('bdren_oauth.php'),
-        ]);
+        ], 'oauth-config');
     }
 
     public function register()
