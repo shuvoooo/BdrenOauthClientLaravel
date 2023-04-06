@@ -2,7 +2,6 @@
 
 This package provides a Laravel 7+ service provider for the [BdrenOauth](https://accounts.bdren.net.bd) OAuth2 service.
 
-
 ## Installation
 
 You can install the package via composer:
@@ -27,3 +26,10 @@ OAUTH_USER_MODEL=[optional|user_model]
 OAUTH_SUCCESS_URL=[optional|success_url]
 OAUTH_ERROR_URL=[optional|failure_url]
 ```
+
+Need to run migrations for the `access_tokens` table:
+
+```bash
+php artisan migrate
+```
+
