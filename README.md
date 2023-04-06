@@ -33,3 +33,16 @@ Need to run migrations for the `access_tokens` table:
 php artisan migrate
 ```
 
+
+## Usage
+
+We need to introduce the routes for the OAuth2 flow:
+
+```php
+// for login
+route('oauth.login')
+
+// for logout
+route('oauth.logout')
+```
+
