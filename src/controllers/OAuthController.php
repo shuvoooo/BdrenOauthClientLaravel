@@ -171,11 +171,11 @@ class OAuthController extends Controller
         $email = $response->email;
 
         // check user exist or not
-        $user = $this->user->where('email', $email)->first();
+        $user = $this->user::where('email', $email)->first();
 
         if (!$user) {
             // create user
-            $user = $this->user->create([
+            $user = $this->user::create([
                 'name' => $response->first_name . ' ' . $response->last_name,
                 'email' => $response->email,
                 'password' => bcrypt(rand(123456789, 987654321)),
