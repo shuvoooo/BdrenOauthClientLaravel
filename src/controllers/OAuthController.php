@@ -21,7 +21,7 @@ class OAuthController extends Controller
         $this->client_id = config('bdren_oauth.oauth_client_id');
         $this->client_secret = config('bdren_oauth.oauth_client_secret');
         $this->base_url = config('bdren_oauth.oauth_base_url');
-        $this->user = app(config('bdren_oauth.oauth_user_model'));
+        $this->user = config('bdren_oauth.oauth_user_model');
         $this->success_redirect = config('bdren_oauth.oauth_success_url');
         $this->error_redirect = config('bdren_oauth.oauth_error_url');
 
