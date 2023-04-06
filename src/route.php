@@ -11,7 +11,7 @@ Route::group([
 ], function () {
     Route::get('login', [OAuthController::class, 'login'])->name('login');
     Route::get('callback', [OAuthController::class, 'callback'])->name('callback');
-    Route::get('logout', [OAuthController::class, 'logout'])->name('logout');¬
+    Route::get('logout', [OAuthController::class, 'logout'])->name('logout');
 });
 
 
