@@ -9,9 +9,9 @@ Route::group([
     'middleware' => ['web'],
     'as' => 'oauth.'
 ], function () {
-    Route::get('login', [OAuthController::class, 'login']);
-    Route::get('callback', [OAuthController::class, 'callback']);
-    Route::get('logout', [OAuthController::class, 'logout']);
+    Route::get('login', [OAuthController::class, 'login'])->name('login');
+    Route::get('callback', [OAuthController::class, 'callback'])->name('callback');
+    Route::get('logout', [OAuthController::class, 'logout'])->name('logout');¬
 });
 
 
