@@ -12,7 +12,7 @@ Route::group([
     Route::get('login', [OAuthController::class, 'login'])->name('login');
     Route::get('callback', [OAuthController::class, 'callback'])->name('callback');
     Route::get('logout', [OAuthController::class, 'logout'])->name('logout');
-    Route::get('change-password', [OAuthController::class, 'password_change'])->name('password_change');
+    Route::get('password-change', [OAuthController::class, 'password_change'])->name('password_change');
 });
 
 

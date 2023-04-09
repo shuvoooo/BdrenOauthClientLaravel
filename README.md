@@ -44,5 +44,8 @@ route('oauth.login')
 
 // for logout
 route('oauth.logout')
+
+// for password change url
+route('password_change')
 ```
 
