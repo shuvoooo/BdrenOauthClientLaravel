@@ -202,4 +202,10 @@ class OAuthController extends Controller
         Auth::logout();
         return redirect($this->success_redirect);
     }
+
+
+    public function password_change(Request $request)
+    {
+        return redirect("https://accounts.bdren.net.bd/password-change");
+    }
 }

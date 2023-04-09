@@ -20,7 +20,10 @@
   "version": "1.0.0",
   "require": {
     "ext-curl": "*",
-    "ext-json": "*"
+    "ext-json": "*",
+    "illuminate/support": "*",
+    "illuminate/routing": "*",
+    "illuminate/http": "*"
   },
   "extra": {
     "laravel": {
