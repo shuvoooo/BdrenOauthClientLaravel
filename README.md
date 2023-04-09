@@ -21,7 +21,7 @@ Then add environment variables to your `.env` file:
 ```dotenv
 OAUTH_CLIENT_ID=[your_client_id]
 OAUTH_CLIENT_SECRET=[your_client_secret]
-OAUTH_BASE_URL=[your_oauth_base_url]
+OAUTH_BASE_URL=[optional|your_oauth_base_url]
 OAUTH_USER_MODEL=[optional|user_model]
 OAUTH_SUCCESS_URL=[optional|success_url]
 OAUTH_ERROR_URL=[optional|failure_url]
