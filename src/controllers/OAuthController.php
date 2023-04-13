@@ -16,6 +16,9 @@ class OAuthController extends Controller
     private string $success_redirect;
     private string $error_redirect;
 
+    /**
+     * @throws \Exception
+     */
     public function __construct()
     {
         $this->client_id = config('bdren_oauth.oauth_client_id');

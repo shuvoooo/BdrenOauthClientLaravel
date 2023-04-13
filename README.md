@@ -33,6 +33,14 @@ Need to run migrations for the `access_tokens` table:
 php artisan migrate
 ```
 
+Add service provider to `config/app.php`:
+
+```php
+'providers' => [
+    // ...
+    Shuvo\BdrenOauth\BdrenOauthServiceProvider::class,
+],
+```
 
 ## Usage
 
@@ -46,6 +54,6 @@ route('oauth.login')
 route('oauth.logout')
 
 // for password change url
-route('password_change')
+route('oauth.password_change')
 ```
 
