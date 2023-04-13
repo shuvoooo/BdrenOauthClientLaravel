@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Auth;
 class OAuthController extends Controller
 {
 
-    private string $client_id;
-    private string $client_secret;
-    private string $base_url;
-    private string $user;
-    private string $success_redirect;
-    private string $error_redirect;
+    private $client_id;
+    private $client_secret;
+    private $base_url;
+    private $user;
+    private $success_redirect;
+    private $error_redirect;
 
     /**
      * @throws \Exception
